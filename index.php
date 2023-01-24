@@ -14,10 +14,9 @@
 <body>
     <main>
         <form action="./ricevi.php" method="POST">
-            <label for="">inserisci il tuo nome</label>
-            <input type="text" name="nome" placeholder="Example giggino">
-            <label for="">inserisci la tua email</label>
-            <input type="email" name="email" placeholder="ex gig23@mail.com">
+            <label for="">inserisci una frase</label>
+            <input type="text" name="frase" placeholder="Example ciao, come va?">
+            <input type="text" name="word" placeholder="parola da censurare">
             <button type="submit">invia</button>
         </form>
     </main>

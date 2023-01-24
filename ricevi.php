@@ -1,11 +1,22 @@
-<h2>
+<p>
     <?php
-    echo $_POST['nome'];
+    echo $_POST['frase'];
     ?>
-</h2>
+    <br>
+    <?php
+    $sentence = 'la frase è lunga: ';
+    echo $sentence . strlen($_POST['frase']);
+    ?>
+</p>
 
-<h5>
+<p>
     <?php
-    echo $_POST['email'];
+    $newFrase = str_replace(strtolower($_POST['word']), '***', strtolower($_POST['frase']));
+    echo $newFrase;
     ?>
-</h5>
+    <br>
+    <?php
+    $sentence = 'la nuova frase è lunga : ';
+    echo $sentence . strlen($newFrase);
+    ?>
+</p>
